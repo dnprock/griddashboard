@@ -2,12 +2,22 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>griddashboard by dnprock</title>
+    <title>Grid Dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+
+    <link rel="stylesheet" type="text/css" href="http://troolee.github.io/gridstack.js/dist/gridstack.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="http://troolee.github.io/gridstack.js/gridstack-demo.css" media="screen">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://troolee.github.io/gridstack.js/jquery.ui.touch-punch.min.js"></script>
+    <script src="https://troolee.github.io/gridstack.js/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.5.0/lodash.min.js"></script>
+    <script src="https://troolee.github.io/gridstack.js/dist/gridstack.js"></script>
   </head>
   <body>
     <section class="page-header">
@@ -29,11 +39,28 @@
 
       <p>Select a visualization below to add to dashboard.</p>
 
+      <div id="visualization-tiles"></div>
+
       <h3>
         <a id="dashboard" class="anchor" href="#dashboard" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Dashboard</h3>
       </h3>
 
       <p>Drag and drop to arrange/resize dashboard.</p>
+
+      <div class="grid-stack-item grid-stack-item-template" style="display:none;"
+          data-gs-x="0" data-gs-y="0"
+          data-gs-width="6" data-gs-height="5">
+              <div class="grid-stack-item-content">
+              </div>
+      </div>
+
+      <div class="dashboard">
+        <div class="grid-stack">
+
+        </div>
+      </div>
+
+      <script type="text/javascript" src="dashboard.js"></script>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/dnprock/griddashboard">griddashboard</a> is maintained by <a href="https://github.com/dnprock">dnprock</a>.</span>

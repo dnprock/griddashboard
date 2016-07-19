@@ -205,7 +205,7 @@ a {
 
 @media screen and (min-width: 64em) {
   .main-content {
-    max-width: 64rem;
+    max-width: 84rem;
     padding: 2rem 6rem;
     margin: 0 auto;
     font-size: 1.1rem; } }
@@ -243,3 +243,52 @@ a {
 @media screen and (max-width: 42em) {
   .site-footer {
     font-size: 0.9rem; } }
+
+.dashboard {
+  background: #2c3e50;
+  padding: 20px;
+}
+
+.gs-close-handle {
+  opacity: 0;
+  width: 20px;
+  height: 20px;
+  top: 4px;
+  right: 4px;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAsklEQVQ4T73VfRHCMAyH4XcOkAIScAIK0IICcIIEkIIELtx+uxByLeUC/XfZ0+Zj3UTxmoK3Ai7AETh39toBB2AL3BXrQWHr+eG+gRp2muNuHhUYMW2YoR5T3IIKvAI6WczUoxnm0Y3AVqC9YKgtpZmV97mxr2EPbfVoySJ2+Rv0pc4RtFOMoG9Ny8BP0XSs/gKWpjyCpcP/s7HpnWx4sMs/vfLLwQpcen2pY6UXbMnP4AF0oDoVL8cW1wAAAABJRU5ErkJggg==');
+  background-position: top left;
+  background-repeat: no-repeat;
+  z-index: 90;
+  cursor: pointer;
+  position: absolute;
+  transition: opacity 300ms ease 50ms,background-color 300ms ease 50ms;
+}
+
+.grid-stack-item:hover .gs-close-handle {
+  opacity: 1 !important;
+}
+
+.gs-move-handle {
+  opacity: 0;
+  width: 20px;
+  height: 20px;
+  bottom: 4px;
+  right: 34px;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABTElEQVQ4T52VTUoDQRCFv+yE3MGfIK69gboKIkbEaygqiGcwEFRQryEGEQlR1Bu4EkUQjXfQncgbqqVome6Z1KYZpuqb6fdezzTIVwsYAD9AG3hPjTQyPMHugEnr+wAWU9AUcAa4d7DwbEEXAK3/KgXsA52SHVwA63WBm0AXuAVWbfgKWAL2gbO6wNAvzaSjSjDJUFp+y9LsGBgCp24iBdy2h2gtNA1A7+YX0KwI/AYmDFa4L2AcjUvg0AHngSO73gUe3b09YMVHSsBXYDaf70odzwK+AHOV2vNNTwJOm3NTLhq9iltWfJat900GBVM8dBxTChgw8rHRGyo2N1FoU7HZsrO9A3z62KTUGTvYMVRhPbCjF6Jx7Y7eSd2jpw/AWsmrnwMbdYHS9AEI7od5GSAZCs3iyn1g40j9uVkmeg6oOUGlnX4Bytwo5eAvITxL/9zzaZAAAAAASUVORK5CYII=');
+  background-position: top left;
+  background-repeat: no-repeat;
+  z-index: 90;
+  cursor: pointer;
+  position: absolute;
+  transition: opacity 300ms ease 50ms,background-color 300ms ease 50ms;
+}
+
+.grid-stack-item:hover .gs-move-handle {
+  opacity: 1 !important;
+}
+
+.viz-thumbnail img {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+}
